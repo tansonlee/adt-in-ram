@@ -43,7 +43,7 @@ for i in range(array_length(c)):
 
 ## Queue
 
-This ADT is a first in first out structure which means the first element to enter the queue is the first to leave the queue.
+This ADT is a first in first out (FIFO) structure which means the first element to enter the queue is the first to leave the queue.
 
 There are 5 operations implemented, they all take O(1) time:
 * `queue`: the empty queue
@@ -74,7 +74,7 @@ print(queue_is_empty(c))
 
 ## Stack
 
-This ADT is a first in last out data structure which means the first element added to the stack is the last element to leave.
+This ADT is a last in first out (LIFO) data structure which means the first element added to the stack is the last element to leave.
 
 There are 5 operations implemented, they all take O(1) time:
 * `stack`: returns the empty stack
