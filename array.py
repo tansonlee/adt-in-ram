@@ -3,8 +3,10 @@ from ram import ram, ram_store, ram_fetch, core_dump
 # make_array(size)
 # array_store(array, index, value)
 # array_fetch(array, index)
+# array_length(array)
 # build_array(size, procedure)
 # array_map(array, procedure)
+
 
 # store pointer to array at address 0 ([0]===2)
 # store length of array at address 1
@@ -48,3 +50,6 @@ def array_map(array, procedure):
 		new_value = procedure(stored_value)
 		my_array = array_store(my_array, i, new_value)
 	return my_array
+
+def array_length(array):
+	return ram_fetch(array, 1)

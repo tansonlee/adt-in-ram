@@ -3,7 +3,7 @@ from ram import ram, ram_fetch, ram_store
 # stack -> stack
 # stack_push(stack, value) -> stack
 # stack_pop(stack) -> stack
-# stack_peak(stack) -> value
+# stack_peek(stack) -> value
 # stack_is_empty(stack) -> boolean
 
 # [0]: address of the next availible spot
@@ -26,6 +26,6 @@ def stack_pop(stack):
 	decrement_availible = ram_store(stack, 0, next_availible - 1)
 	return decrement_availible
 
-def stack_peak(stack):
+def stack_peek(stack):
 	next_availible = ram_fetch(stack, 0)
 	return ram_fetch(stack, next_availible - 1)
