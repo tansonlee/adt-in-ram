@@ -15,12 +15,12 @@ An array, queue, and stack are implemented using the RAM implentation which can 
 This ADT that holds a predetermined number of elements which can be accessed in any order.
 
 There are 6 operations implemented:
-* make_array(size): O(1), creates an empty array with the specified size
-* array_store(array, index, value): O(1), stores the value at the index in the array
-* array_fetch(array, index): O(1), fetches the value store at the index in the array
-* array_length(array): O(1), returns the length of the array
-* build_array(size, procedure): O(size) * O(procedure), creates an array with the elements procedure(i) where i = 0, 1, ..., size - 1
-* array_map(array, procedure): O(size) * O(procedure), returns an array where each element has been transformed by procedure
+* `make_array(size)`: O(1), creates an empty array with the specified size
+* `array_store(array, index, value)`: O(1), stores the value at the index in the array
+* `array_fetch(array, index)`: O(1), fetches the value store at the index in the array
+* `array_length(array)`: O(1), returns the length of the array
+* `build_array(size, procedure)`: O(size) * O(procedure), creates an array with the elements procedure(i) where i = 0, 1, ..., size - 1
+* `array_map(array, procedure)`: O(size) * O(procedure), returns an array where each element has been transformed by procedure
 
 
 ```python
@@ -46,11 +46,11 @@ for i in range(array_length(c)):
 This ADT is a first in first out structure which means the first element to enter the queue is the first to leave the queue.
 
 There are 5 operations implemented, they all take O(1) time:
-* queue: the empty queue
-* queue_is_empty(queue): returns True if the queue is empty False otherwise
-* enqueue(queue, value): returns a queue with all the elements of queue and value
-* dequeue(queue): returns a queue with all the elements of queue except the first element
-* queue_peak(queue): returns the first element of the queue
+* `queue`: the empty queue
+* `queue_is_empty(queue)`: returns True if the queue is empty False otherwise
+* `enqueue(queue, value)`: returns a queue with all the elements of queue and value
+* `dequeue(queue)`: returns a queue with all the elements of queue except the first element
+* `queue_peak(queue)`: returns the first element of the queue
 
 ```python
 from queue import *
@@ -77,11 +77,11 @@ print(queue_is_empty(c))
 This ADT is a first in last out data structure which means the first element added to the stack is the last element to leave.
 
 There are 5 operations implemented, they all take O(1) time:
-* stack: returns the empty stack
-* stack_is_empty(stack): returns True when the stack is empty, False otherwise
-* stack_push(stack, value): returns a stack with the elements of stack and value
-* stack_pop(stack): returns a stack without the last element
-* stack_peek(stack): returns the last element in the stack
+* `stack`: returns the empty stack
+* `stack_is_empty(stack)`: returns True when the stack is empty, False otherwise
+* `stack_push(stack, value)`: returns a stack with the elements of stack and value
+* `stack_pop(stack)`: returns a stack without the last element
+* `stack_peek(stack)`: returns the last element in the stack
 
 ```python
 from stack import *
